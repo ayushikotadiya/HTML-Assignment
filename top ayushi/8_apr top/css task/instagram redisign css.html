@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>instagram redesign desktop</title>
+    
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- remix icons -->
+    <link
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    body {
+      background: #f8f8f8;
+    }
+    :root {
+      gradiant: linear-gradient;
+    }
+    .sidebar {
+      position: fixed;
+      width: 300px;
+      height: 100vh;
+      padding: 30px;
+    }
+    .main-home {
+      position: absolute;
+      width: calc(10% - 200px);
+      min-width: 100vh;
+      top: 0;
+      left: 300px;
+      background: #fff;
+      border-radius: 1rem 0 0 1rem;
+      z-index: 1000;
+    }
+    .logo img {
+      width: 50px;
+    }
+    .profile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.20rem;
+    }
+    .profile-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #e2336b;
+    }
+    .profile-img img{
+      width: 80px;
+      height: 80px;
+       object-fit: cover;
+       border-radius: 70%;
+       object-position: center;
+
+    }
+    .name{
+      display: flex;
+      align-items: center;
+      margin: 1rem 0 0.4rem;
+    }
+    .name h1{
+      font-size: 1.2rem;
+    }
+    .name img{
+      margin-left: 4px;
+      width: 20px;
+      object-fit: contain;
+    }.profile-img span{
+      font-size: 0.938rem;
+      font-weight: 400;
+    }
+    .about{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+    .box{
+      text-align: center;
+    }
+    .box h3{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .box span{
+      display: flex;
+      align-self: center;
+      font-size: 0.939rem;
+      font-weight: 400;
+    }
+    
+  </style>
+  <body>
+    <div>
+      <!-- main home -->
+      <div class="main-home"></div>
+    </div>
+    <div class="image">
+      <img
+        src=i class="ri-circle-fill"></i>"
+      />
+    </div>
+    <!-- sidebar -->
+    <d class="sidebar">
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="" />
+      </a>
+      <!-- profile image -->
+      <div class="profile">
+        <div class="profile-img">
+          <img src=" https://tse1.mm.bing.net/th?id=OIP.AWH7ThaReFcmbPzsClNhIQHaNK&pid=Api&rs=1&c=1&qlt=95&w=63&h=113" alt="" />
+        </div>
+        <div class="name">
+          <h1>Lisa kim</h1>
+          <img src="img/profile.lpg" alt="" />
+          <!-- about -->
+        </div class="about">
+        <!-- box 1-->
+        <div class="box">
+          <h3>500</h3>
+        <span>posts</span>
+        </div>
+        <!-- box 2-->
+        <div class="box">
+          <h3>100.0k</h3>
+        <span>followers</span>
+        </div>
+        <!-- box 3-->
+        <div class="box">
+          <h3> 1000</h3>
+        <span>following</span>
+        </div>
+        <!-- menu -->
+        <div class="menu">
+          <a href="#" class="active">
+            <span class="icon"> 
+              <i class="ri-function-line"></i>
+            </span>
+            feed
+          </a>
+        </div>
+      </div>
+      <span>@lipa</span>
+      <div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .cards {
+      aspect-ratio: 1;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0.5rem;
+      padding: 0.5rem
+      position: relative;
+      cursor: pointer
+      overflow: hidden
+    }
+    .cards-img{
+        position: absolute;
+        z-index:  -1;
+        object-fit: cover;
+        transition: all 0.6s cubic-bezier();
+    }
+    .card:hover .cards-img {
+          scale: 0.85;
+          filter: brightness(0.65);
+        }
+        .card-box{
+            padding: 0.8rem;
+            background-color: rgb(255, 255, 255, 0.15);
+            backdrop-filter: blur(2px);
+            transition: 0.5s cubic-bezier();
+            position: relative;
+            z-index: 2;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    .box-1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    /* place other boxes*/
+    .cards:hover .card-box{
+        opacity: 1;
+        transform: translate(-10px);
+    }
+  </style>
+  <body>
+    <div class="cards">
+      <div class="cards-img">
+        <img
+          src="https://tse3.mm.bing.net/th?id=OIP.u9n30tBsI51RRUa_xVXOYwHaEK&pid=Api&P=0&h=500"
+        />
+      </div>
+      <div class="card-box box-1">
+        <h2>sophia</h2>
+        <p>backend developer</p>
+      </div>
+      <div class="cards-box box-4">
+        <h2>skills</h2>
+        <p>javascript</p>
+        <!-- more skills -->
+      </div>
+    </div>
+  </body>
+</html>
